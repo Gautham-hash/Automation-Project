@@ -50,6 +50,7 @@ public class MentorPage {
     	WebElement projectInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@role='combobox'])[1]")));
     	projectInput.click();
     	projectInput.sendKeys(project);
+    
 
     		}
 

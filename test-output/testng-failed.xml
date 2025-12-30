@@ -7,6 +7,7 @@
         <methods>
           <include name="tc003_addMentor"/>
           <include name="SetUp"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.LoginTest -->

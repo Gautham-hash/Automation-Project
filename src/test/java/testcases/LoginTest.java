@@ -2,6 +2,7 @@ package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.TestBase;
@@ -17,7 +18,7 @@ public class LoginTest extends TestBase {
     MentorPage mobj;
     LogOut lobj;
 
-    @BeforeClass
+    @BeforeMethod
     public void SetUp() {
         obj = new LoginPage(driver);
         hobj = new HomePage(driver);
@@ -36,6 +37,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void tc002_addProject() {
+    	
         hobj.addProject();
         hobj.projectTopic("AI/ML");
         hobj.projectDuration("6 months");
@@ -44,6 +46,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void tc003_addMentor() {
+    	
         mobj.clkMentor();
         mobj.addMentor();
         mobj.mntrName("gautham");
@@ -56,6 +59,7 @@ public class LoginTest extends TestBase {
     
     @Test
     public void tc004_logout() {
+    
     	lobj.clickLogout();
     }
     
